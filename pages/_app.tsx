@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 
 import "../styles/globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 import Router from "next/router";

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export default function About() {
     return (
-        <div className='container flex flex-col py-32'>
+        <div className='container mx-auto flex flex-col py-32'>
             <div className='flex mx-auto py-8'>
                 <div>
                     <Image src="/lorem.jpg" height={200} width={200} />

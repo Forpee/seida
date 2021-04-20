@@ -33,12 +33,12 @@ export default function Home({ posts }) {
 
 
     return (
-        <div className='container'>
+        <div className='container mx-auto'>
             <h1 className='text-center'>Hello to my blog</h1>
-            <div className="container m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 col-auto">
+            <div className="container mx-auto m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4 col-auto">
                 {
                     posts.map(article => (
-                        <div key={article.slug}>
+                        <div className='m-auto' key={article.slug}>
 
 
                              <Link href="/post/[slug]" as={`/post/${article.slug}`}>
@@ -46,7 +46,7 @@ export default function Home({ posts }) {
                             <Image src={article.feature_image} width={320} height={200} quality={100} />
                             <h1>{article.title}</h1>
                             
-                                <a>{article.title} </a>
+                               
                                 </a>
                             </Link>
 
