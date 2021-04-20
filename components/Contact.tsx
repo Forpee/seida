@@ -40,7 +40,7 @@ export default function Contact() {
           } else {
 
 
-            const { data } = axios.post('http://localhost:1337/contact' , {
+            const  data  = axios.post('http://localhost:1337/contact' , {
             name: values.firstName,
       
             email: values.email,
