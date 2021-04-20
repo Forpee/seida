@@ -8,10 +8,10 @@ export default function Header() {
                 <Link href='/'>
                     <a className="text-gray-300 mx-2" >HOME</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/contact'>
                     <a className="text-gray-300">CONTACT</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/about'>
                     <a className="text-gray-300 mx-2">ABOUT</a>
                 </Link>
                 <Link href='/blog'>

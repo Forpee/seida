@@ -72,20 +72,20 @@ const Post: React.FC<{ post: Post }> = (props) => {
     }
 
     return (
-        <div className='container'>
+        <div className='container mx-auto'>
           
-            <h1> {post.title}</h1>
+            <h1 className='text-center text-5xl mt-8'> {post.title}</h1>
             {console.log(post.html)}
-            <p>{post.custom_excerpt}</p>
+            <p className='max-w-3xl my-8 font-semibold mx-auto'>{post.custom_excerpt}</p>
             
             <div className='px-64 ' dangerouslySetInnerHTML={{ __html: post.html }} ></div>
             {enableLoadComments && (
-                <p className='w-16' onClick={loadComments}>
-                    load comments
+                <p className='w-48 mx-auto py-8 font-bold ' onClick={loadComments}>
+                    LOAD COMMENTS
                 </p>
             )}
 
-            <div id="disqus_thread"></div>
+            <div className='my-8 md:px-44' id="disqus_thread"></div>
 
 
         </div>
